@@ -17,7 +17,7 @@ let { verbose, level } = (() => {
 })();
 
 export default {
-  DefaultMongoURI: 'mongodb://localhost:27017/parse',
+  DefaultMongoURI: 'mongodb://heroku_2clxhs4l:1tna8oalm0lk7befhdvhi73psn@ds019816.mlab.com:19816/heroku_2clxhs4l',
   jsonLogs: process.env.JSON_LOGS || false,
   logsFolder,
   verbose,
