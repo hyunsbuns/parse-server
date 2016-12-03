@@ -10,7 +10,7 @@ import { getLogger }        from './logger';
 
 // Factory function
 let _ParseServer = function(options) {
-/*
+
   options.push({
   verifyUserEmails: true,
   emailAdapter: {
@@ -43,7 +43,7 @@ let _ParseServer = function(options) {
     }
   }
 });
-*/
+
   let server = new ParseServer(options);
   return server.app;
 }
