@@ -26,7 +26,7 @@ export default {
   enableAnonymousUsers: true,
   allowClientClassCreation: true,
   maxUploadSize: '20mb',
-  verifyUserEmails: false,
+  verifyUserEmails: true,
   preventLoginWithUnverifiedEmail: false,
   sessionLength: 31536000,
   expireInactiveSessions: true,
