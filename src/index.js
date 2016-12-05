@@ -10,8 +10,11 @@ import { getLogger }        from './logger';
 
 // Factory function
 let _ParseServer = function(options) {
-/*
+
   options["verifyUserEmails"] = true;
+  options["publicServerURL"] = "http://www.awesomefat.com";
+  options["emailVerifyTokenValidityDuration"] = 2 * 60 * 60;
+  options["preventLoginWithUnverifiedEmail"] = false;
   options["appName"] = "Skwad";
   options["emailAdapter"] = {
     module: 'parse-server-simple-mailgun-adapter',
@@ -21,10 +24,11 @@ let _ParseServer = function(options) {
                apiKey: 'key-d279ba46aac5d9e924d0334518dac5a6',
              }
   };
-*/
+  console.log(options);
   let server = new ParseServer(options);
   return server.app;
 }
+
 // Mount the create liveQueryServer
 _ParseServer.createLiveQueryServer = ParseServer.createLiveQueryServer;
 
