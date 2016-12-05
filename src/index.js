@@ -19,7 +19,7 @@ let _ParseServer = function(options) {
   options["emailAdapter"] = {
     module: 'parse-server-simple-mailgun-adapter',
     options: {
-               fromAddress: 'skwad@skwad.com',
+               fromAddress: 'skwad@sandbox11a3162a2f9f420cbb7a16050ece428e.mailgun.org',
                domain: 'sandbox11a3162a2f9f420cbb7a16050ece428e.mailgun.org',
                apiKey: 'key-d279ba46aac5d9e924d0334518dac5a6',
              }
