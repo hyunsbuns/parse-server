@@ -10,6 +10,7 @@ import { getLogger }        from './logger';
 
 // Factory function
 let _ParseServer = function(options) {
+/*
   options["verifyUserEmails"] = true;
   options["appName"] = "Skwad";
   options["emailAdapter"] = {
@@ -20,6 +21,7 @@ let _ParseServer = function(options) {
                apiKey: 'key-d279ba46aac5d9e924d0334518dac5a6',
              }
   };
+*/
   let server = new ParseServer(options);
   return server.app;
 }
