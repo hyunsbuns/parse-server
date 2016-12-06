@@ -12,7 +12,7 @@ import { getLogger }        from './logger';
 let _ParseServer = function(options) {
 
   options["verifyUserEmails"] = true;
-  options["publicServerURL"] = "https://skwad-parse-new.herokuapp.com";
+  options["publicServerURL"] = "https://skwad-parse-new.herokuapp.com/parse";
   options["emailVerifyTokenValidityDuration"] = 2 * 60 * 60;
   options["preventLoginWithUnverifiedEmail"] = false;
   options["appName"] = "Skwad";
